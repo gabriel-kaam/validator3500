@@ -4,14 +4,16 @@
   "description": "Format validator, to be used both by the API and the Front of b2c",
   "main": "Validator3500.js",
   "scripts": {
-    "test": "npm run test-server"
+    "test": "mocha --opts ./mocha.opts '*.serverSpec.js'"
   },
   "author": "Gabriel Kaam <gkaam@octo.com>, Anass Oumiri <aoumiri@octo.com@octo.com>",
   "dependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.4.5",
     "moment": "^2.11.2"
   },
-  "repository" : {
-    "type" : "git",
-    "url" : "https://github.com/gabriel-kaam/validator3500.git"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gabriel-kaam/validator3500.git"
   }
 }
