@@ -1,6 +1,5 @@
 "use strict";
 
-var relative = require('require-relative');
 var moment = require("moment");
 var checks = require("./checks.js");
 

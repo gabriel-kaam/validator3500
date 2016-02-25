@@ -9,8 +9,7 @@
   },
   "author": "Gabriel Kaam <gkaam@octo.com>, Anass Oumiri <aoumiri@octo.com>",
   "dependencies": {
-    "moment": "^2.11.2",
-    "require-relative": "^0.8.7"
+    "moment": "^2.11.2"
   },
   "repository": {
     "type": "git",
