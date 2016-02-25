@@ -6,7 +6,7 @@
   "scripts": {
     "test": "mocha --opts ./mocha.opts '*.serverSpec.js'"
   },
-  "author": "Gabriel Kaam <gkaam@octo.com>, Anass Oumiri <aoumiri@octo.com@octo.com>",
+  "author": "Gabriel Kaam <gkaam@octo.com>, Anass Oumiri <aoumiri@octo.com>",
   "dependencies": {
     "chai": "^3.5.0",
     "mocha": "^2.4.5",
