@@ -1,12 +1,12 @@
 "use strict";
 
-const Validator3500 = require("./validator3500");
-const shared = require("./shared");
-const expect = require("chai").expect;
+var Validator3500 = require("../../src/Validator3500");
+var shared = require("./shared");
+var expect = require("chai").expect;
 
-describe("Validator (3500 edition)", () => {
-  describe(".validate", () => {
-    context("on firstName", () => {
+describe("Validator (3500 edition)", function() {
+  describe(".validate", function() {
+    context("on firstName", function() {
       before(function() {
         this.ruleKey = "first_name";
       });
@@ -20,7 +20,7 @@ describe("Validator (3500 edition)", () => {
       shared.itCanHaveThisValue("Gabriel");
     });
 
-    context("on lastName", () => {
+    context("on lastName", function() {
       before(function() {
         this.ruleKey = "last_name";
       });
@@ -34,7 +34,7 @@ describe("Validator (3500 edition)", () => {
       shared.itCanHaveThisValue("Gabriel");
     });
 
-    context("on unicodeFirstName", () => {
+    context("on unicodeFirstName", function() {
       before(function() {
         this.ruleKey = "unicode_first_name";
       });
@@ -48,7 +48,7 @@ describe("Validator (3500 edition)", () => {
       shared.itCanHaveThisValue("Gabriel-さん");
     });
 
-    context("on unicodeLastName", () => {
+    context("on unicodeLastName", function() {
       before(function() {
         this.ruleKey = "unicode_last_name";
       });
@@ -62,7 +62,7 @@ describe("Validator (3500 edition)", () => {
       shared.itCanHaveThisValue("Gabriel-さん");
     });
 
-    context("on dateOfBirth", () => {
+    context("on dateOfBirth", function() {
       before(function() {
         this.ruleKey = "date_of_birth";
       });
@@ -74,13 +74,13 @@ describe("Validator (3500 edition)", () => {
       shared.itCannotBeUnder18Years();
 
       it("returns true if the date is valid", function() {
-        const currentYear = new Date().getFullYear();
-        const dateOfBirth = (currentYear - 25) + "-01-01";
+        var currentYear = new Date().getFullYear();
+        var dateOfBirth = (currentYear - 25) + "-01-01";
         expect(Validator3500.validate(this.ruleKey, dateOfBirth)).to.be.true;
       });
     });
 
-    context("on gender", () => {
+    context("on gender", function() {
       before(function() {
         this.ruleKey = "gender";
       });
@@ -94,7 +94,7 @@ describe("Validator (3500 edition)", () => {
       shared.itCanBeOneOfThoseValues(["M", "F"]);
     });
 
-    context("on email", () => {
+    context("on email", function() {
       before(function() {
         this.ruleKey = "email";
       });

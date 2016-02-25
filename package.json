@@ -1,19 +1,23 @@
 {
   "name": "validator3500",
   "version": "0.0.1",
+  "license": "ISC",
   "description": "Format validator, to be used both by the API and the Front of b2c",
-  "main": "Validator3500.js",
+  "main": "src/Validator3500.js",
   "scripts": {
-    "test": "mocha --opts ./mocha.opts '*.serverSpec.js'"
+    "test": "mocha --opts ./mocha.opts 'spec/src/*.spec.js'"
   },
   "author": "Gabriel Kaam <gkaam@octo.com>, Anass Oumiri <aoumiri@octo.com>",
   "dependencies": {
-    "chai": "^3.5.0",
-    "mocha": "^2.4.5",
-    "moment": "^2.11.2"
+    "moment": "^2.11.2",
+    "require-relative": "^0.8.7"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/gabriel-kaam/validator3500.git"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.4.5"
   }
 }
